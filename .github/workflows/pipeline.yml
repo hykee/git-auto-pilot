@@ -13,3 +13,6 @@ jobs:
 
       - name: test
         run: echo "P1 Test Success"
+
+      - name: P2
+        run: echo "P2 Build Success"
