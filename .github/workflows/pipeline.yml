@@ -7,6 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: uat  
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,8 +21,7 @@ jobs:
       - name: P3
         run: echo "P3 Deploy Success"
 
-      - name: P4
-        environment: uat        
+      - name: P4             
         run: echo "P4 UAT Deployment Success"
 
 
