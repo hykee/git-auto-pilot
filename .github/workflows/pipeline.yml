@@ -11,8 +11,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: test
+      - name: P1
         run: echo "P1 Test Success"
 
       - name: P2
         run: echo "P2 Build Success"
+
+      - name: P3
+        run: echo "P3 Deploy Success"
+        
