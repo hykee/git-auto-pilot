@@ -19,4 +19,9 @@ jobs:
 
       - name: P3
         run: echo "P3 Deploy Success"
-        
+
+      - name: P4
+        environment: uat        
+        run: echo "P4 UAT Deployment Success"
+
+
