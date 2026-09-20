@@ -7,7 +7,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    environment: uat  
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,8 +24,8 @@ jobs:
      needs: test
      runs-on: ubuntu-latest
      environment: uat
-      steps:
-        - name: P4
-          run: echo "P4 UAT  Success"
+     steps:
+       - name: P4
+         run: echo "P4 UAT  Success"
 
 
