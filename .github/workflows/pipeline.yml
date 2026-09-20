@@ -21,7 +21,12 @@ jobs:
       - name: P3
         run: echo "P3 Deploy Success"
 
-      - name: P4             
-        run: echo "P4 UAT Deployment Success"
+   P4:
+     needs: P3
+     runs-on: ubuntu-latest
+     environment: uat
+      steps:
+        - name: P4
+          run: echo "P4 UAT  Success"
 
 
