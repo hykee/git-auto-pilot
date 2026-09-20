@@ -1,0 +1,28 @@
+name: Git Auto Pilot
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: P1
+        run: echo "P1 Test Success"
+
+      - name: P2
+        run: echo "P2 Build Success"
+
+      - name: P3
+        run: echo "P3 Deploy Success"
+
+  P4:
+    runs-on: ubuntu-latest
+    environment: uat
+    steps:
+      - name: P4
+        run: echo "P4 UAT  Success"
