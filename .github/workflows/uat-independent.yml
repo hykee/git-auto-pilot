@@ -1,4 +1,4 @@
-name: Git Auto Pilot
+name: uat-independent pipeline
 on:
   push:
     branches:
