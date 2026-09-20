@@ -24,8 +24,8 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     environment: uat
-     seps:
-       - name: P4
-         run: echo "P4 UAT  Success"
+    steps:
+      - name: P4
+        run: echo "P4 UAT  Success"
 
 
