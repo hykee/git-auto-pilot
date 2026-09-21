@@ -18,8 +18,7 @@ jobs:
         run: echo "P2 Build Success"
 
       - name: P3
-        run: exit 1
-
+        run: echo "P3 Deploy Success"
   P4:
     runs-on: ubuntu-latest
     environment: uat
